@@ -1,12 +1,31 @@
-let input = confirm("Хотите ввести числа?");
 let total = 0;
 
-total = prompt();
-total = ++total;
+// 1 ВАРИАНТ
+// let input = confirm("Хотите ввести числа?");
+// while (input) {
+//     input = +prompt();
+//     total += input;
+// }
+// alert(`Общая сумма чисел равна ${total}`);
 
-while (input) {
-    input = +prompt();
-    total += input;
+// 2 ВАРИАНТ
+// while (true) {
+//     let input = prompt('Enter number');
 
-}
-alert(`Общая сумма чисел равна ${total}`);
+//     if (input === null) {
+//         alert('canceled by user');
+//         break;
+//     }
+
+//     input = Number(input); // NaN
+
+//     const notANumber = Number.isNaN(input); // true
+
+//     if (notANumber) {
+//         alert('Not a number entered');
+//         continue;
+//     }
+//     total += input;
+// }
+
+// alert(`total amount ${total}`);
